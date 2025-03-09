@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import BoardList from '../components/BoardList.vue';
 import BoardDetail from '../components/BoardDetail.vue';
+import BoardWritePage from '../components/BoardWritePage.vue';
 
 const routes = [
     {
@@ -14,6 +15,12 @@ const routes = [
         component: BoardDetail,
         props: true
     },
+    {
+        path: '/write',
+        name: 'BoardWritePage',
+        component: BoardWritePage,
+        props: true
+      }
 ];
 
 const router = createRouter({
