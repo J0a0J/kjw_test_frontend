@@ -3,7 +3,6 @@
     <div class="card">
       <div class="card-body">
         <h2>게시글 상세 정보</h2>
-        <p><strong>게시번호:</strong> {{ this.id }}</p>
         <p><strong>제목:</strong> {{ board.title }}</p>
         <p><strong>작성자:</strong> {{ board.writer }}</p>
         <p><strong></strong> {{ board.content }}</p>
