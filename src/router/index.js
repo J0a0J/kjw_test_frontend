@@ -1,11 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import BoardList from '../components/BoardList.vue';
+import BoardDetail from '../components/BoardDetail.vue';
 
 const routes = [
     {
         path: '/',
         name: 'BoardList',
         component: BoardList
+    },
+    {
+        path: '/list/:idx',
+        name: 'BoardDetail',
+        component: BoardDetail,
+        props: true
     },
 ];
 
